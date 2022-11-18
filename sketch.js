@@ -436,6 +436,11 @@ function spawnObstacles(){
   //adding each obstacle to the group
     obstaclesGroup.add(obstacle);
   }
+  
+  
+  document.querySelector('#defaultCanvas0').style.height = window.windowHeight + "px";
+  document.querySelector('#defaultCanvas0').style.width = window.windowwidth + "px";
+  
 }
 
 function spawnCoins(){

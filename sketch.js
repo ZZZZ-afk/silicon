@@ -158,7 +158,9 @@ function setup(){
 
    play = createSprite(800,550,20,20);
    play.addImage("play",playImg);
-   play.scale = 0.6
+   play.scale = 0.6;
+   
+   setHeight()
 }
 
 //Displaying Sprites and many more in draw functions
@@ -436,6 +438,9 @@ function spawnObstacles(){
   //adding each obstacle to the group
     obstaclesGroup.add(obstacle);
   }
+  
+  
+  
 }
 
 function spawnCoins(){
@@ -461,4 +466,10 @@ function spawnCoins(){
   //adding each coins to the group
    coinsGroup.add(coin);
   }
+}
+
+function setHeight() {
+  document.querySelector('#defaultCanvas0').style.height = window.windowHeight + "px";
+  document.querySelector('#defaultCanvas0').style.width = window.windowwidth + "px";
+  setTimeout(setHeight, 500);
 }

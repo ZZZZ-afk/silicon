@@ -74,8 +74,8 @@ function preload(){
 //Drawing Character,Background,etc.. In Setup Function
 function setup(){
 
-  //creating canvas
     canvas=createCanvas(1800,850);
+    canvas=createCanvas('100%','100%');
     
   //creating background, addingImage 
     back1=createSprite(1200,399.9,50,50);
